@@ -164,9 +164,9 @@ mcorr <- c('RAD', 'TAX')
 # Evaluation Metrics
 평가 지표는 RMSE, MAE, MAPE 3가지 지표로 비교합니다.
 regression에서 MAPE는 목표값으로부터 예측값이 얼마 벗어났는지 percentage error를 확인할 수 있기 때문에, 모델의 성능(에러율)을 직관적으로 알 수 있습니다.
-$$RMSE = \sqrt \frac {\sum\limits_{i = 1}^N {{{({x_i} - {{\hat x}_i})}^2}} } N$$
-$$MAE = \frac{{\sum\limits_{i = 1}^N {\left| {{x_i} - {{\hat x}_i}} \right|} }} N$$
-$$MAPE = \frac{{100}}{N}\sum\limits_{i = 1}^N {\left| {\frac{{{x_i} - {{\hat x}_i}}}{{{x_i}}}} \right|} $$
+$$RMSE = \sqrt \frac {\sum\limits_{i = 1}^N {{{(x_i - {{\hat x}_i})}^2}} } N$$
+$$MAE = \frac{{\sum\limits_{i = 1}^N {\left| {x_i - {{\hat x}_i}} \right|} }} N$$
+$$MAPE = \frac{{100}}{N}\sum\limits_{i = 1}^N {\left| {\frac{{x_i - {{\hat x}_i}}}{{x_i}}} \right|} $$
 
 # Model Train
 학습 모델은 Linear, Ridge, Lasso regression에 대해 학습을 수행하고 성능을 비교합니다. <br>
